@@ -4,7 +4,7 @@ const router=express.Router();
 
 const { createCustomer, getCustomer, DeleteCustomer  }=require("../controller/customerController")
 
-const { createCard , getAllCart }=require("../controller/cardController")
+const { createCard , get }=require("../controller/cardController")
 
 
 router.post("/createCustomer", createCustomer)
@@ -13,7 +13,7 @@ router.delete("/DeleteCustomer/:customerID", DeleteCustomer)
 
 
 router.post("/createCard/:customerID",createCard)
-router.get("/get",getAllCart)
+router.get("/get",get)
 
 
 

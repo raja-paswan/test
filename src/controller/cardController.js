@@ -36,7 +36,7 @@ const createCard = async (req, res) => {
 }
 
 
-const getAllCart = async ( _, res) => {
+const get= async ( _, res) => {
     try{
 
        
@@ -52,4 +52,4 @@ const getAllCart = async ( _, res) => {
     }
 }
 
-module.exports = {getAllCart ,createCard }
+module.exports = {get ,createCard }
